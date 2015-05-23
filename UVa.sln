@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{09ACB55B-2D4D-427B-8E66-DE8EFBA459DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLibrary", "CSharpLibrary\CSharpLibrary.csproj", "{718CB485-4A8F-4CBD-BEF5-60224CE4A535}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{09ACB55B-2D4D-427B-8E66-DE8EFBA459DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09ACB55B-2D4D-427B-8E66-DE8EFBA459DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09ACB55B-2D4D-427B-8E66-DE8EFBA459DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{718CB485-4A8F-4CBD-BEF5-60224CE4A535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{718CB485-4A8F-4CBD-BEF5-60224CE4A535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{718CB485-4A8F-4CBD-BEF5-60224CE4A535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{718CB485-4A8F-4CBD-BEF5-60224CE4A535}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
