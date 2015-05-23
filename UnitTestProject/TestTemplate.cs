@@ -8,6 +8,7 @@ namespace UnitTestProject
 {
     using System;
     using CSharpLibrary;
+    using FSharpLibrary;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
