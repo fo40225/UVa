@@ -8,7 +8,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		MyRules.ruleset = MyRules.ruleset
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{09ACB55B-2D4D-427B-8E66-DE8EFBA459DB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09ACB55B-2D4D-427B-8E66-DE8EFBA459DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09ACB55B-2D4D-427B-8E66-DE8EFBA459DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09ACB55B-2D4D-427B-8E66-DE8EFBA459DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09ACB55B-2D4D-427B-8E66-DE8EFBA459DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
