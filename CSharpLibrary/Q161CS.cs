@@ -12,6 +12,10 @@ namespace CSharpLibrary
     using System.Text;
     using System.Threading.Tasks;
 
+    /// <summary>
+    /// Q161 Traffic Lights in C#
+    /// </summary>
+
     public static class Q161CS
     {
         public static TimeSpan GetAnswer(int[] input)

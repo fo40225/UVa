@@ -5,6 +5,7 @@ type private LightStatus =
     | Yellow = 1
     | Red = 2
 
+/// Q161 Traffic Lights in F#
 module Q161FS = 
     let private TtrafficLightStatus period nowSec = 
         let greenToYellow p = p - 5

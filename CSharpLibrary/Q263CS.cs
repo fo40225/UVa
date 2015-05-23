@@ -12,6 +12,9 @@ namespace CSharpLibrary
     using System.Text;
     using System.Threading.Tasks;
 
+    /// <summary>
+    /// Q263 Number Chains in C#
+    /// </summary>
     public static class Q263CS
     {
         public static void GetAnswer(int input)

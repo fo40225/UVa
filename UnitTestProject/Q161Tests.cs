@@ -5,7 +5,7 @@
 //-----------------------------------------------------------------------
 
 // http://uva.onlinejudge.org/external/1/161.pdf
-// Q161 Trac Lights
+// Q161 Traffic Lights
 // One way of achieving a smooth and economical drive to work is to 'catch' every trac light, that is have
 // every signal change to green as you approach it. One day you notice as you come over the brow of a hill
 // that every trac light you can see has just changed to green and that therefore your chances of catching
