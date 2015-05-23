@@ -337,5 +337,291 @@ namespace UnitTestProject
         }
 
         #endregion CSharp
+
+        #region FSharp
+
+        [TestMethod]
+        public void FSTestMethod1()
+        {
+            // arrange
+            var input = new int[] { 19, 20 };
+            var expected = new TimeSpan(0, 0, 40);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod2()
+        {
+            // arrange
+            var input = new int[] { 30, 25, 35 };
+            var expected = new TimeSpan(0, 5, 0);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod3()
+        {
+            // arrange
+            var input = new int[] { 10, 10, 10 };
+            var expected = new TimeSpan(0, 0, 20);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod4()
+        {
+            // arrange
+            var input = new int[] { 90, 75, 72, 60, 50, 40, 24, 18 };
+            var expected = new TimeSpan(1, 0, 0);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(System.TimeoutException))]
+        public void FSTestMethod5()
+        {
+            // arrange
+            var input = new int[] { 11, 12, 13, 14, 15, 16, 17, 18, 19, 10, 11,
+                12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,
+                28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
+                44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+                60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
+                76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 81,
+                82, 83, 84, 85, 86, 87, 88, 89, 90 };
+
+            // act
+            Q161FS.GetAnswer(input);
+
+            // assert
+        }
+
+        [TestMethod]
+        public void FSTestMethod6()
+        {
+            // arrange
+            var input = new int[] { 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 };
+            var expected = new TimeSpan(2, 14, 24);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod7()
+        {
+            // arrange
+            var input = new int[] { 10, 11, 37, 89, 43 };
+            var expected = new TimeSpan(0, 0, 22);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod8()
+        {
+            // arrange
+            var input = new int[] { 15, 17, 20, 24, 29, 30, 31, 37, 38, 39, 40,
+                41, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 85, 86, 87,
+                88, 89, 90 };
+            var expected = new TimeSpan(0, 4, 8);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod9()
+        {
+            // arrange
+            var input = new int[] { 15, 17, 20, 24, 29, 30, 31, 37, 38, 39, 40,
+                41, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 85, 86, 87,
+                88, 89, 90 };
+            var expected = new TimeSpan(0, 4, 8);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod10()
+        {
+            // arrange
+            var input = new int[] { 10, 11, 12, 15, 18, 20, 22, 23, 24, 25, 26,
+                27, 29, 30, 31, 32, 35, 36, 37, 40, 42, 43, 45, 50, 52, 58, 60,
+                62, 66, 67, 68, 69, 72, 73, 75, 76, 78, 81, 83, 84, 87, 88, 89,
+                90 };
+            var expected = new TimeSpan(5, 0, 0);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(System.ArgumentException))]
+        public void FSTestMethod11()
+        {
+            // arrange
+            var input = new int[] { 30, 58, 62, 32, 31, 32, 22, 64, 89, 90, 10,
+                27, 10, 29, 56, 35, 28, 45, 56, 58, 29, 28, 54, 78, 58, 96, 32,
+                10, 28, 35, 36, 98, 75, 32, 54, 85, 96, 32, 42, 45, 10, 27, 77,
+                88, 28, 62, 52, 35, 53, 90, 50, 51, 52, 53, 56, 55, 56, 57, 58,
+                59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74,
+                75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90,
+                31, 32, 33, 34, 35, 36, 37, 38, 41 };
+
+            // act
+            Q161FS.GetAnswer(input);
+
+            // assert
+        }
+
+        [TestMethod]
+        public void FSTestMethod12()
+        {
+            // arrange
+            var input = new int[] { 10, 10 };
+            var expected = new TimeSpan(0, 0, 20);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod13()
+        {
+            // arrange
+            var input = new int[] { 11, 10, 12, 13, 14 };
+            var expected = new TimeSpan(0, 25, 40);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(System.TimeoutException))]
+        public void FSTestMethod14()
+        {
+            // arrange
+            var input = new int[] { 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
+
+            // act
+            Q161FS.GetAnswer(input);
+
+            // assert
+        }
+
+        [TestMethod]
+        public void FSTestMethod15()
+        {
+            // arrange
+            var input = new int[] { 10, 26 };
+            var expected = new TimeSpan(0, 00, 20);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod16()
+        {
+            // arrange
+            var input = new int[] { 42, 87, 88, 90 };
+            var expected = new TimeSpan(0, 3, 0);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod17()
+        {
+            // arrange
+            var input = new int[] { 53, 54, 55, 68, 20 };
+            var expected = new TimeSpan(0, 0, 40);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod18()
+        {
+            // arrange
+            var input = new int[] { 50, 51, 52, 53, 54, 55, 56, 25, 18 };
+            var expected = new TimeSpan(0, 1, 52);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod19()
+        {
+            // arrange
+            var input = new int[] { 56, 90, 10, 25, 32, 64, 58, 52 };
+            var expected = new TimeSpan(0, 19, 20);
+
+            // act
+            var actual = Q161FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        #endregion FSharp
     }
 }
