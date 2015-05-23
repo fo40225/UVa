@@ -60,6 +60,10 @@
       <Project>{718cb485-4a8f-4cbd-bef5-60224ce4a535}</Project>
       <Name>CSharpLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FSharpLibrary\FSharpLibrary.fsproj">
+      <Project>{8dc1f73f-2e8f-4dc7-828d-4d5a0ae3a575}</Project>
+      <Name>FSharpLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
