@@ -53,345 +53,345 @@ namespace UnitTestProject
         [TestMethod]
         public void CSTestMethod1()
         {
-            //arrange
+            // arrange
             var input = 6;
             var expected = 0.6250;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod2()
         {
-            //arrange
+            // arrange
             var input = 10;
             var expected = 0.7266;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod3()
         {
-            //arrange
+            // arrange
             var input = 256;
             var expected = 0.9500;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod4()
         {
-            //arrange
+            // arrange
             var input = 50000;
             var expected = 0.9964;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod5()
         {
-            //arrange
+            // arrange
             var input = 100000;
             var expected = 0.9975;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod6()
         {
-            //arrange
+            // arrange
             var input = 2;
             var expected = 0.0000;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod7()
         {
-            //arrange
+            // arrange
             var input = 4;
             var expected = 0.5000;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod8()
         {
-            //arrange
+            // arrange
             var input = 8;
             var expected = 0.6875;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod9()
         {
-            //arrange
+            // arrange
             var input = 20;
             var expected = 0.8145;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod10()
         {
-            //arrange
+            // arrange
             var input = 50;
             var expected = 0.8854;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod11()
         {
-            //arrange
+            // arrange
             var input = 100;
             var expected = 0.9196;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod12()
         {
-            //arrange
+            // arrange
             var input = 200;
             var expected = 0.9434;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod13()
         {
-            //arrange
+            // arrange
             var input = 500;
             var expected = 0.9643;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod14()
         {
-            //arrange
+            // arrange
             var input = 1000;
             var expected = 0.9747;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod15()
         {
-            //arrange
+            // arrange
             var input = 2000;
             var expected = 0.9822;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod16()
         {
-            //arrange
+            // arrange
             var input = 3000;
             var expected = 0.9854;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod17()
         {
-            //arrange
+            // arrange
             var input = 4000;
             var expected = 0.9874;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod18()
         {
-            //arrange
+            // arrange
             var input = 5000;
             var expected = 0.9887;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod19()
         {
-            //arrange
+            // arrange
             var input = 6000;
             var expected = 0.9897;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod20()
         {
-            //arrange
+            // arrange
             var input = 7000;
             var expected = 0.9905;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod21()
         {
-            //arrange
+            // arrange
             var input = 8000;
             var expected = 0.9911;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod22()
         {
-            //arrange
+            // arrange
             var input = 9000;
             var expected = 0.9916;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
 
         [TestMethod]
         public void CSTestMethod23()
         {
-            //arrange
+            // arrange
             var input = 10000;
             var expected = 0.9920;
 
-            //act
+            // act
             var actual = Q557CS.GetAnswer(input);
             var IsEqual = (Math.Max(actual, expected) - Math.Min(actual, expected)) < 0.0001;
 
-            //assert
+            // assert
             Assert.IsTrue(IsEqual);
         }
     }

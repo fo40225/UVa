@@ -17,14 +17,14 @@ namespace UnitTestProject
         [TestMethod]
         public void CSTestMethod1()
         {
-            //arrange
+            // arrange
             var input ;
             var expected ;
 
-            //act
+            // act
             var actual = $$CS.GetAnswer(input);
 
-            //assert
+            // assert
             Assert.AreEqual(expected, actual);
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace FSharpLibrary
 
-/// Q263 Number Chains in F#
+// Q263 Number Chains in F#
 module public Q263FS = 
     let private GetMin input = 
         string input

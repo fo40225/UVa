@@ -12,6 +12,9 @@ namespace CSharpLibrary
     using System.Text;
     using System.Threading.Tasks;
 
+    /// <summary>
+    /// $$ in C#
+    /// </summary>
     public static class $$CS
     {
         public static void GetAnswer( input)
