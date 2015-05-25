@@ -20,7 +20,37 @@ namespace CSharpLibrary
     {
         public static BigInteger GetAnswer(BigInteger input)
         {
-            throw new NotImplementedException();
+            return input.Sqrt();
+        }
+
+        private static BigInteger Sqrt(this BigInteger num)
+        {
+            int numBitLength = num.BitLength();
+            BigInteger result = BigInteger.Zero;
+            BigInteger mask = BigInteger.One << (((numBitLength & 1) == 0) ? (numBitLength - 2) : (numBitLength - 1));
+
+            while (mask > 0)
+            {
+                if (num >= result + mask)
+                {
+                    num -= (result + mask);
+                    result += (mask << 1);
+                }
+                result >>= 1;
+                mask >>= 2;
+            }
+            return result;
+        }
+
+        private static int BitLength(this BigInteger bi)
+        {
+            int l = 0;
+            while (bi > 0)
+            {
+                bi >>= 1;
+                l++;
+            }
+            return l;
         }
     }
 }

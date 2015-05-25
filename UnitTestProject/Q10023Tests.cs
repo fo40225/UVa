@@ -72,8 +72,8 @@ namespace UnitTestProject
         public void CSTestMethod3()
         {
             // arrange
-            var input = new BigInteger(2);
-            var expected = new BigInteger(4);
+            var input = new BigInteger(4);
+            var expected = new BigInteger(2);
 
             // act
             var actual = Q10023CS.GetAnswer(input);
@@ -85,8 +85,8 @@ namespace UnitTestProject
         public void CSTestMethod4()
         {
             // arrange
-            var input = new BigInteger(10);
-            var expected = new BigInteger(100);
+            var input = new BigInteger(100);
+            var expected = new BigInteger(10);
 
             // act
             var actual = Q10023CS.GetAnswer(input);
@@ -98,8 +98,8 @@ namespace UnitTestProject
         public void CSTestMethod5()
         {
             // arrange
-            var input = new BigInteger(17);
-            var expected = new BigInteger(289);
+            var input = new BigInteger(289);
+            var expected = new BigInteger(17);
 
             // act
             var actual = Q10023CS.GetAnswer(input);
