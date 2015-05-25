@@ -23,6 +23,11 @@ namespace CSharpLibrary
             return input.Sqrt();
         }
 
+        /// <summary>
+        /// Returns the square root of a specified number.
+        /// </summary>
+        /// <param name="num">The number whose square root is to be found.</param>
+        /// <returns>The positive square root of number.</returns>
         private static BigInteger Sqrt(this BigInteger num)
         {
             int numBitLength = num.BitLength();
@@ -33,8 +38,8 @@ namespace CSharpLibrary
             {
                 if (num >= result + mask)
                 {
-                    num -= (result + mask);
-                    result += (mask << 1);
+                    num -= result + mask;
+                    result += mask << 1;
                 }
                 result >>= 1;
                 mask >>= 2;
@@ -42,6 +47,11 @@ namespace CSharpLibrary
             return result;
         }
 
+        /// <summary>
+        /// Returns the number of bits in the bi.
+        /// </summary>
+        /// <param name="bi">The number whose number of bits is to be found.</param>
+        /// <returns>Number of bits in bi.</returns>
         private static int BitLength(this BigInteger bi)
         {
             int l = 0;
