@@ -1,6 +1,6 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="Q263CS.cs">
-//     Copyright (c) Ching Hsu. All rights reserved.
+// <copyright file="Q263CS.cs" company="CompanyName">
+//     Copyright (c) Ching Hsu, CompanyName. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
 
@@ -30,7 +30,8 @@ namespace CSharpLibrary
                 min = GetMin(input);
                 ans = max - min;
                 Console.WriteLine("{0} - {1} = {2}", max.ToString(), min.ToString(), ans.ToString());
-            } while (((Func<bool>)(() =>
+            }
+            while (((Func<bool>)(() =>
             {
                 if (set.Contains(ans))
                 {

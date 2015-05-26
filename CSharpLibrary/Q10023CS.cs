@@ -1,6 +1,6 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="Q10023CS.cs">
-//     Copyright (c) Ching Hsu. All rights reserved.
+// <copyright file="Q10023CS.cs" company="CompanyName">
+//     Copyright (c) Ching Hsu, CompanyName. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
 
@@ -30,6 +30,35 @@ namespace CSharpLibrary
         /// <returns>The positive square root of number.</returns>
         private static BigInteger Sqrt(this BigInteger num)
         {
+            // -----------------------------------------------------------------
+            //    1 3                             result>>1                    
+            //   ----                             v                            
+            // 1 |169                            1 1 0 1                       
+            // 1 |100  =>                     ----------                       
+            // 23| 69                   1     | 10101001 <-num  ( BitLength: 8)
+            //  3| 69                   1     |  1000000 <-mask ( 1 << 8-2 )   
+            //   |  0      +=mask<<1-> 101    |  1101001 <-num-=               
+            //               mask>>2->   1    |  1010000                       
+            //                         1100   |    11001                       
+            //                            0   |      0                         
+            //                         11001  |    11001                       
+            //                             1  |    11001                       
+            //                                |        0                       
+            //                                                                 
+            //    1 7              1 0 0 0 1                                   
+            //   ----             ----------                                   
+            // 1 |289       1     |100100001 <-num  ( BitLength: 9)            
+            // 1 |100       1     |100000000 <-mask ( 1 << 9-1 )               
+            // 27|189      100    |   100001                                   
+            //  7|189        0    |  0                                         
+            //   |  0      1000   |   100001                                   
+            //                0   |    0                                       
+            //             10000  |   100001                                   
+            //                 0  |      0                                     
+            //             100001 |   100001                                   
+            //                  1 |   100001                                   
+            //                    |        0                                   
+            // -----------------------------------------------------------------
             int numBitLength = num.BitLength();
             BigInteger result = BigInteger.Zero;
             BigInteger mask = BigInteger.One << (((numBitLength & 1) == 0) ? (numBitLength - 2) : (numBitLength - 1));
@@ -41,9 +70,11 @@ namespace CSharpLibrary
                     num -= result + mask;
                     result += mask << 1;
                 }
+
                 result >>= 1;
                 mask >>= 2;
             }
+
             return result;
         }
 
@@ -60,6 +91,7 @@ namespace CSharpLibrary
                 bi >>= 1;
                 l++;
             }
+
             return l;
         }
     }

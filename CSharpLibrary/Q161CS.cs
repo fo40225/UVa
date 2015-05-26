@@ -1,6 +1,6 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="Q161CS.cs">
-//     Copyright (c) Ching Hsu. All rights reserved.
+// <copyright file="Q161CS.cs" company="CompanyName">
+//     Copyright (c) Ching Hsu, CompanyName. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
 
@@ -15,7 +15,6 @@ namespace CSharpLibrary
     /// <summary>
     /// Q161 Traffic Lights in C#
     /// </summary>
-
     public static class Q161CS
     {
         public static TimeSpan GetAnswer(int[] input)
@@ -114,6 +113,7 @@ namespace CSharpLibrary
                 yellowPeriod = sec - 5;
                 greenPeriod = sec * 2;
             }
+
             innerClock = 0;
             Status = LightStatus.Green;
         }
@@ -131,6 +131,7 @@ namespace CSharpLibrary
                     {
                         Status = LightStatus.Yellow;
                     }
+
                     break;
 
                 case LightStatus.Yellow:
@@ -138,6 +139,7 @@ namespace CSharpLibrary
                     {
                         Status = LightStatus.Red;
                     }
+
                     break;
 
                 case LightStatus.Red:
@@ -146,6 +148,7 @@ namespace CSharpLibrary
                         Status = LightStatus.Green;
                         innerClock = innerClock - greenPeriod;
                     }
+
                     break;
             }
         }

@@ -1,6 +1,6 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="$$Tests.cs">
-//     Copyright (c) Ching Hsu. All rights reserved.
+// <copyright file="$$Tests.cs" company="CompanyName">
+//     Copyright (c) Ching Hsu, CompanyName. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
 
