@@ -57,7 +57,7 @@ namespace UnitTestProject
         public void CSTestMethod2()
         {
             // arrange 10^500 - 1
-            var expected = BigInteger.Subtract(BigInteger.Parse("1.0E+500", NumberStyles.Float), BigInteger.One);
+            var expected = BigInteger.Parse("1.0E+500", NumberStyles.Float) - BigInteger.One;
             var input = BigInteger.Pow(expected, 2);
 
             // act
@@ -131,7 +131,7 @@ namespace UnitTestProject
         public void FSTestMethod2()
         {
             // arrange 10^500 - 1
-            var expected = BigInteger.Subtract(BigInteger.Parse("1.0E+500", NumberStyles.Float), BigInteger.One);
+            var expected = BigInteger.Parse("1.0E+500", NumberStyles.Float) - BigInteger.One;
             var input = BigInteger.Pow(expected, 2);
 
             // act
