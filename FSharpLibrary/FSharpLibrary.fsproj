@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Q263FS.fs" />
     <Compile Include="Q161FS.fs" />
+    <Compile Include="Q10023FS.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

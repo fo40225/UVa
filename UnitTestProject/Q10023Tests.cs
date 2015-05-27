@@ -31,6 +31,8 @@ namespace UnitTestProject
     [TestClass]
     public class Q10023Tests
     {
+        #region CSharp
+
         [TestMethod]
         public void CSTestMethod1()
         {
@@ -100,5 +102,80 @@ namespace UnitTestProject
             // assert
             Assert.AreEqual(expected, actual);
         }
+
+        #endregion
+        #region FSharp
+
+        [TestMethod]
+        public void FSTestMethod1()
+        {
+            // arrange
+            var input = new BigInteger(7206604678144);
+            var expected = new BigInteger(2684512);
+
+            // act
+            var actual = Q10023FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod2()
+        {
+            // arrange 10^500 - 1
+            var expected = BigInteger.Subtract(BigInteger.Parse("1.0E+500", NumberStyles.Float), BigInteger.One);
+            var input = BigInteger.Pow(expected, 2);
+
+            // act
+            var actual = Q10023FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod3()
+        {
+            // arrange
+            var input = new BigInteger(4);
+            var expected = new BigInteger(2);
+
+            // act
+            var actual = Q10023FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod4()
+        {
+            // arrange
+            var input = new BigInteger(100);
+            var expected = new BigInteger(10);
+
+            // act
+            var actual = Q10023FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod5()
+        {
+            // arrange
+            var input = new BigInteger(289);
+            var expected = new BigInteger(17);
+
+            // act
+            var actual = Q10023FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        #endregion
     }
 }
