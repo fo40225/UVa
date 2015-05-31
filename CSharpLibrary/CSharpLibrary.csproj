@@ -46,6 +46,7 @@
     <Compile Include="Q10023CS.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Q143CS.cs" />
     <Compile Include="Q161CS.cs" />
     <Compile Include="Q263CS.cs" />
     <Compile Include="Q557CS.cs" />
