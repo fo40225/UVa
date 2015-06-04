@@ -26,9 +26,9 @@ namespace CSharpLibrary
             Triangle2 area = new Triangle2(new Point2(floats[0], floats[1]), new Point2(floats[2], floats[3]), new Point2(floats[4], floats[5]));
             List<Point2> trees = new List<Point2>();
 
-            for (int i = 1; i <= 100; i++)
+            for (int i = 1; i <= 99; i++)
             {
-                for (int j = 1; j <= 100; j++)
+                for (int j = 1; j <= 99; j++)
                 {
                     trees.Add(new Point2(i, j));
                 }
@@ -105,14 +105,7 @@ namespace CSharpLibrary
                 return false;
             }
 
-            if (obj is Point2)
-            {
-                return this.Equals((Point2)obj);
-            }
-            else
-            {
-                return false;
-            }
+            return obj is Point2 && this.Equals((Point2)obj);
         }
 
         /// <summary>
@@ -206,7 +199,7 @@ namespace CSharpLibrary
             }
             else
             {
-                if (this.X == other.Y)
+                if (this.X == other.X)
                 {
                     if (this.Y > other.Y)
                     {
@@ -253,6 +246,17 @@ namespace CSharpLibrary
         public static double GetDistance(Point2 p1, Point2 p2)
         {
             return Math.Sqrt(Math.Pow(p1.X - p2.X, 2) + Math.Pow(p1.Y - p2.Y, 2));
+        }
+
+        /// <summary>
+        /// Returns a <see cref="System.String"/> that represents this instance.
+        /// </summary>
+        /// <returns>
+        /// A <see cref="System.String"/> that represents this instance.
+        /// </returns>
+        public override string ToString()
+        {
+            return "(" + this.X.ToString() + ", " + this.Y.ToString() + ")";
         }
     }
 
@@ -349,14 +353,7 @@ namespace CSharpLibrary
                 return false;
             }
 
-            if (obj is Triangle2)
-            {
-                return this.Equals((Triangle2)obj);
-            }
-            else
-            {
-                return false;
-            }
+            return obj is Triangle2 && this.Equals((Triangle2)obj);
         }
 
         /// <summary>
@@ -491,6 +488,17 @@ namespace CSharpLibrary
         public static bool operator <=(Triangle2 p1, Triangle2 p2)
         {
             return p1.Equals(p2) || p1.CompareTo(p2) == -1;
+        }
+
+        /// <summary>
+        /// Returns a <see cref="System.String"/> that represents this instance.
+        /// </summary>
+        /// <returns>
+        /// A <see cref="System.String"/> that represents this instance.
+        /// </returns>
+        public override string ToString()
+        {
+            return "[" + this.Vertex1.ToString() + ", " + this.Vertex2.ToString() + ", " + this.Vertex3.ToString() + "]";
         }
     }
 }
