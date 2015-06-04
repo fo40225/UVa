@@ -21,7 +21,7 @@
 // representing the coordinates of a triangle. The entire file will be terminated by a line containing 6 zeroes
 // (0 0 0 0 0 0).
 // Output will consist of one line for each triangle, containing the number of trees for that triangle right
-// justied in a field of width 4.
+// justified in a field of width 4.
 
 // Sample input
 // 1.5 1.5 1.5 6.8 6.8 1.5
