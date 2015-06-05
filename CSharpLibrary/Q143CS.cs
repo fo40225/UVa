@@ -267,9 +267,19 @@ namespace CSharpLibrary
     public struct Triangle2 : IEquatable<Triangle2>, IComparable<Triangle2>, IComparable
     {
         /// <summary>
-        /// Vertices of triangle
+        /// First vertex of triangle.
         /// </summary>
-        private readonly Point2[] vertices;
+        private readonly Point2 vertex1;
+
+        /// <summary>
+        /// Second vertex of triangle.
+        /// </summary>
+        private readonly Point2 vertex2;
+
+        /// <summary>
+        /// Third vertex of triangle.
+        /// </summary>
+        private readonly Point2 vertex3;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Triangle2"/> struct.
@@ -279,7 +289,9 @@ namespace CSharpLibrary
         /// <param name="p3">The third vertex of the triangle.</param>
         public Triangle2(Point2 p1, Point2 p2, Point2 p3)
         {
-            this.vertices = new Point2[3] { p1, p2, p3 };
+            vertex1 = p1;
+            vertex2 = p2;
+            vertex3 = p3;
         }
 
         /// <summary>
@@ -290,7 +302,7 @@ namespace CSharpLibrary
         {
             get
             {
-                return this.vertices[0];
+                return vertex1;
             }
         }
 
@@ -302,7 +314,7 @@ namespace CSharpLibrary
         {
             get
             {
-                return this.vertices[1];
+                return vertex2;
             }
         }
 
@@ -314,7 +326,7 @@ namespace CSharpLibrary
         {
             get
             {
-                return this.vertices[2];
+                return vertex3;
             }
         }
 
@@ -327,9 +339,9 @@ namespace CSharpLibrary
         /// </returns>
         public bool IsInside(Point2 point)
         {
-            Vector2 pointToVertex1 = new Vector2(this.vertices[0].X - point.X, this.vertices[0].Y - point.Y);
-            Vector2 pointToVertex2 = new Vector2(this.vertices[1].X - point.X, this.vertices[1].Y - point.Y);
-            Vector2 pointToVertex3 = new Vector2(this.vertices[2].X - point.X, this.vertices[2].Y - point.Y);
+            Vector2 pointToVertex1 = new Vector2(vertex1.X - point.X, vertex1.Y - point.Y);
+            Vector2 pointToVertex2 = new Vector2(vertex2.X - point.X, vertex2.Y - point.Y);
+            Vector2 pointToVertex3 = new Vector2(vertex3.X - point.X, vertex3.Y - point.Y);
 
             var vector1To2 = Vector3.Cross(new Vector3(pointToVertex1, 0), new Vector3(pointToVertex2, 0));
             var vector2To3 = Vector3.Cross(new Vector3(pointToVertex2, 0), new Vector3(pointToVertex3, 0));
@@ -365,8 +377,14 @@ namespace CSharpLibrary
         /// </returns>
         public bool Equals(Triangle2 other)
         {
-            var thisSortedVertices = this.vertices.OrderBy(x => x);
-            var otherSortedVertices = other.vertices.OrderBy(x => x);
+            var thisSortedVertices = (new List<Point2>()
+            {
+                this.vertex1,this.vertex2,this.vertex3
+            }).OrderBy(x => x);
+            var otherSortedVertices = (new List<Point2>()
+            {
+                other.vertex1,other.vertex2,other.vertex3
+            }).OrderBy(x => x);
             return thisSortedVertices.SequenceEqual(otherSortedVertices);
         }
 
@@ -378,7 +396,10 @@ namespace CSharpLibrary
         /// </returns>
         public override int GetHashCode()
         {
-            var thisSortedVertices = this.vertices.OrderBy(x => x).ToList();
+            var thisSortedVertices = (new List<Point2>()
+            {
+                this.vertex1,this.vertex2,this.vertex3
+            }).OrderBy(x => x).ToArray();
             return (new
             {
                 v1x = thisSortedVertices[0].X,
