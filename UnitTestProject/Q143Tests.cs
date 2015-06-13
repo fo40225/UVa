@@ -41,6 +41,8 @@ namespace UnitTestProject
     [TestClass]
     public class Q143Tests
     {
+        #region CSharp
+
         [TestMethod]
         public void CSTestMethod1()
         {
@@ -138,5 +140,108 @@ namespace UnitTestProject
             // assert
             Assert.AreEqual(expected, actual);
         }
+
+        #endregion
+        #region FSharp
+
+        [TestMethod]
+        public void FSTestMethod1()
+        {
+            // arrange
+            var input = new double[] { 1.5, 1.5, 1.5, 6.8, 6.8, 1.5 };
+            var expected = 15;
+
+            // act
+            var actual = Q143FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod2()
+        {
+            // arrange
+            var input = new double[] { 10.7, 6.9, 8.5, 1.5, 14.5, 1.5 };
+            var expected = 17;
+
+            // act
+            var actual = Q143FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod3()
+        {
+            // arrange
+            var input = new double[] { 0, 100, 100, 0, 0, 0 };
+            var expected = 4950;
+
+            // act
+            var actual = Q143FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod4()
+        {
+            // arrange
+            var input = new double[] { 73.00, 98.22, 8.50, 95.66, 66.27, 13.55 };
+            var expected = 2720;
+
+            // act
+            var actual = Q143FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod5()
+        {
+            // arrange
+            var input = new double[] { 64.27, 41.32, 80.08, 78.29, 22.12, 28.56 };
+            var expected = 677;
+
+            // act
+            var actual = Q143FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod6()
+        {
+            // arrange
+            var input = new double[] { 28.63, 91.29, 99.35, 12.04, 48.30, 74.61 };
+            var expected = 189;
+
+            // act
+            var actual = Q143FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void FSTestMethod7()
+        {
+            // arrange
+            var input = new double[] { 19.23, 91.24, 60.25, 46.96, 77.53, 12.41 };
+            var expected = 327;
+
+            // act
+            var actual = Q143FS.GetAnswer(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        #endregion
     }
 }
