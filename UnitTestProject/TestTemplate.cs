@@ -27,6 +27,5 @@ namespace UnitTestProject
             // assert
             Assert.AreEqual(expected, actual);
         }
-
     }
 }
