@@ -77,7 +77,7 @@ N
         }
 
         [TestMethod]
-        public void CSTestMethod1()
+        public void CSTestMethod2()
         {
             // arrange
             var input =
