@@ -31,7 +31,7 @@ namespace CSharpLibrary
 
             var sums = input.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
                                 .Select(x => x.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
-                                    .Select(y => int.Parse(y.ToString())).ToArray()).ToList();
+                                    .Select(y => int.Parse(y)).ToArray()).ToList();
             StringBuilder sb = new StringBuilder();
             int count = 1;
             foreach (var sum in sums)

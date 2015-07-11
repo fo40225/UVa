@@ -30,8 +30,8 @@ namespace CSharpLibrary
             }
 
             var plugs = input.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
-                    .Select(x => x.Where(y => y != ' ')
-                        .Select(y => int.Parse(y.ToString())).ToArray()).ToList();
+                                 .Select(x => x.Where(y => y != ' ')
+                                     .Select(y => int.Parse(y.ToString())).ToArray()).ToList();
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < plugs.Count; i = i + 2)
             {
