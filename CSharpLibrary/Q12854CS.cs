@@ -19,6 +19,16 @@ namespace CSharpLibrary
     {
         public static string GetAnswer(string input)
         {
+            if (input == null)
+            {
+                throw new ArgumentNullException("input", "input is null");
+            }
+
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                throw new ArgumentException("input is empty or all whitespace", "input");
+            }
+
             var plugs = input.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
                     .Select(x => x.Where(y => y != ' ')
                         .Select(y => int.Parse(y.ToString())).ToArray()).ToList();
@@ -30,6 +40,7 @@ namespace CSharpLibrary
                 var isCompatible = first.Zip(second, (a, b) => a ^ b).All(x => x == 1);
                 sb.AppendLine(isCompatible ? "Y" : "N");
             }
+
             return sb.ToString();
         }
     }

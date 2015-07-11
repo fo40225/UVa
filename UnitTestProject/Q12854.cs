@@ -5,7 +5,6 @@
 //-----------------------------------------------------------------------
 
 //https://uva.onlinejudge.org/external/128/12854.pdf
-
 // Q12854 Automated Checking Machine
 // The Internet Computer Parts Company (ICPC) is an on-line shop that sells computer parts. Pairs
 // of in-line electrical connectors are among the most popular parts that ICPC sells. However, they are
@@ -69,6 +68,7 @@ namespace UnitTestProject
 @"Y
 N
 ";
+
             // act
             var actual = Q12854CS.GetAnswer(input);
 
@@ -383,6 +383,7 @@ N
 N
 N
 ";
+
             // act
             var actual = Q12854CS.GetAnswer(input);
 
