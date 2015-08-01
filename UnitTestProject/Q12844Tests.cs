@@ -50,7 +50,7 @@ namespace UnitTestProject
     public class Q12844Tests
     {
         [TestMethod]
-        public void CSTestMethod1()
+        public void Q12844CSTest1()
         {
             // arrange
             var input =
@@ -71,7 +71,7 @@ Case 3: 90 90 100 106 126
         }
 
         [TestMethod]
-        public void CSTestMethod2()
+        public void Q12844CSTest2()
         {
             // arrange
             var input =

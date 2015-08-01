@@ -40,7 +40,7 @@ namespace UnitTestProject
         #region CSharp
 
         [TestMethod]
-        public void CSTestMethod1()
+        public void Q10023CSTest1()
         {
             // arrange
             var input = new BigInteger(7206604678144);
@@ -54,7 +54,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod2()
+        public void Q10023CSTest2()
         {
             // arrange 10^500 - 1
             var expected = BigInteger.Parse("1.0E+500", NumberStyles.Float) - BigInteger.One;
@@ -68,7 +68,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod3()
+        public void Q10023CSTest3()
         {
             // arrange
             var input = new BigInteger(4);
@@ -82,7 +82,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod4()
+        public void Q10023CSTest4()
         {
             // arrange
             var input = new BigInteger(100);
@@ -96,7 +96,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod5()
+        public void Q10023CSTest5()
         {
             // arrange
             var input = new BigInteger(289);
@@ -114,7 +114,7 @@ namespace UnitTestProject
         #region FSharp
 
         [TestMethod]
-        public void FSTestMethod1()
+        public void Q10023FSTest1()
         {
             // arrange
             var input = new BigInteger(7206604678144);
@@ -128,7 +128,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod2()
+        public void Q10023FSTest2()
         {
             // arrange 10^500 - 1
             var expected = BigInteger.Parse("1.0E+500", NumberStyles.Float) - BigInteger.One;
@@ -142,7 +142,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod3()
+        public void Q10023FSTest3()
         {
             // arrange
             var input = new BigInteger(4);
@@ -156,7 +156,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod4()
+        public void Q10023FSTest4()
         {
             // arrange
             var input = new BigInteger(100);
@@ -170,7 +170,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod5()
+        public void Q10023FSTest5()
         {
             // arrange
             var input = new BigInteger(289);

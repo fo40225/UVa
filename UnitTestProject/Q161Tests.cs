@@ -55,7 +55,7 @@ namespace UnitTestProject
         #region CSharp
 
         [TestMethod]
-        public void CSTestMethod1()
+        public void Q161CSTest1()
         {
             // arrange
             var input = new int[] { 19, 20 };
@@ -69,7 +69,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod2()
+        public void Q161CSTest2()
         {
             // arrange
             var input = new int[] { 30, 25, 35 };
@@ -83,7 +83,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod3()
+        public void Q161CSTest3()
         {
             // arrange
             var input = new int[] { 10, 10, 10 };
@@ -97,7 +97,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod4()
+        public void Q161CSTest4()
         {
             // arrange
             var input = new int[] { 90, 75, 72, 60, 50, 40, 24, 18 };
@@ -112,7 +112,7 @@ namespace UnitTestProject
 
         [TestMethod]
         [ExpectedException(typeof(System.TimeoutException))]
-        public void CSTestMethod5()
+        public void Q161CSTest5()
         {
             // arrange
             var input = new int[] { 11, 12, 13, 14, 15, 16, 17, 18, 19, 10, 11,
@@ -130,7 +130,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod6()
+        public void Q161CSTest6()
         {
             // arrange
             var input = new int[] { 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 };
@@ -144,7 +144,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod7()
+        public void Q161CSTest7()
         {
             // arrange
             var input = new int[] { 10, 11, 37, 89, 43 };
@@ -158,7 +158,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod8()
+        public void Q161CSTest8()
         {
             // arrange
             var input = new int[] { 15, 17, 20, 24, 29, 30, 31, 37, 38, 39, 40,
@@ -174,7 +174,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod9()
+        public void Q161CSTest9()
         {
             // arrange
             var input = new int[] { 15, 17, 20, 24, 29, 30, 31, 37, 38, 39, 40,
@@ -190,7 +190,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod10()
+        public void Q161CSTest10()
         {
             // arrange
             var input = new int[] { 10, 11, 12, 15, 18, 20, 22, 23, 24, 25, 26,
@@ -208,7 +208,7 @@ namespace UnitTestProject
 
         [TestMethod]
         [ExpectedException(typeof(System.ArgumentException))]
-        public void CSTestMethod11()
+        public void Q161CSTest11()
         {
             // arrange
             var input = new int[] { 30, 58, 62, 32, 31, 32, 22, 64, 89, 90, 10,
@@ -226,7 +226,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod12()
+        public void Q161CSTest12()
         {
             // arrange
             var input = new int[] { 10, 10 };
@@ -240,7 +240,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod13()
+        public void Q161CSTest13()
         {
             // arrange
             var input = new int[] { 11, 10, 12, 13, 14 };
@@ -255,7 +255,7 @@ namespace UnitTestProject
 
         [TestMethod]
         [ExpectedException(typeof(System.TimeoutException))]
-        public void CSTestMethod14()
+        public void Q161CSTest14()
         {
             // arrange
             var input = new int[] { 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
@@ -267,7 +267,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod15()
+        public void Q161CSTest15()
         {
             // arrange
             var input = new int[] { 10, 26 };
@@ -281,7 +281,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod16()
+        public void Q161CSTest16()
         {
             // arrange
             var input = new int[] { 42, 87, 88, 90 };
@@ -295,7 +295,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod17()
+        public void Q161CSTest17()
         {
             // arrange
             var input = new int[] { 53, 54, 55, 68, 20 };
@@ -309,7 +309,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod18()
+        public void Q161CSTest18()
         {
             // arrange
             var input = new int[] { 50, 51, 52, 53, 54, 55, 56, 25, 18 };
@@ -323,7 +323,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod19()
+        public void Q161CSTest19()
         {
             // arrange
             var input = new int[] { 56, 90, 10, 25, 32, 64, 58, 52 };
@@ -341,7 +341,7 @@ namespace UnitTestProject
         #region FSharp
 
         [TestMethod]
-        public void FSTestMethod1()
+        public void Q161FSTest1()
         {
             // arrange
             var input = new int[] { 19, 20 };
@@ -355,7 +355,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod2()
+        public void Q161FSTest2()
         {
             // arrange
             var input = new int[] { 30, 25, 35 };
@@ -369,7 +369,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod3()
+        public void Q161FSTest3()
         {
             // arrange
             var input = new int[] { 10, 10, 10 };
@@ -383,7 +383,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod4()
+        public void Q161FSTest4()
         {
             // arrange
             var input = new int[] { 90, 75, 72, 60, 50, 40, 24, 18 };
@@ -398,7 +398,7 @@ namespace UnitTestProject
 
         [TestMethod]
         [ExpectedException(typeof(System.TimeoutException))]
-        public void FSTestMethod5()
+        public void Q161FSTest5()
         {
             // arrange
             var input = new int[] { 11, 12, 13, 14, 15, 16, 17, 18, 19, 10, 11,
@@ -416,7 +416,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod6()
+        public void Q161FSTest6()
         {
             // arrange
             var input = new int[] { 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 };
@@ -430,7 +430,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod7()
+        public void Q161FSTest7()
         {
             // arrange
             var input = new int[] { 10, 11, 37, 89, 43 };
@@ -444,7 +444,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod8()
+        public void Q161FSTest8()
         {
             // arrange
             var input = new int[] { 15, 17, 20, 24, 29, 30, 31, 37, 38, 39, 40,
@@ -460,7 +460,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod9()
+        public void Q161FSTest9()
         {
             // arrange
             var input = new int[] { 15, 17, 20, 24, 29, 30, 31, 37, 38, 39, 40,
@@ -476,7 +476,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod10()
+        public void Q161FSTest10()
         {
             // arrange
             var input = new int[] { 10, 11, 12, 15, 18, 20, 22, 23, 24, 25, 26,
@@ -494,7 +494,7 @@ namespace UnitTestProject
 
         [TestMethod]
         [ExpectedException(typeof(System.ArgumentException))]
-        public void FSTestMethod11()
+        public void Q161FSTest11()
         {
             // arrange
             var input = new int[] { 30, 58, 62, 32, 31, 32, 22, 64, 89, 90, 10,
@@ -512,7 +512,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod12()
+        public void Q161FSTest12()
         {
             // arrange
             var input = new int[] { 10, 10 };
@@ -526,7 +526,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod13()
+        public void Q161FSTest13()
         {
             // arrange
             var input = new int[] { 11, 10, 12, 13, 14 };
@@ -541,7 +541,7 @@ namespace UnitTestProject
 
         [TestMethod]
         [ExpectedException(typeof(System.TimeoutException))]
-        public void FSTestMethod14()
+        public void Q161FSTest14()
         {
             // arrange
             var input = new int[] { 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
@@ -553,7 +553,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod15()
+        public void Q161FSTest15()
         {
             // arrange
             var input = new int[] { 10, 26 };
@@ -567,7 +567,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod16()
+        public void Q161FSTest16()
         {
             // arrange
             var input = new int[] { 42, 87, 88, 90 };
@@ -581,7 +581,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod17()
+        public void Q161FSTest17()
         {
             // arrange
             var input = new int[] { 53, 54, 55, 68, 20 };
@@ -595,7 +595,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod18()
+        public void Q161FSTest18()
         {
             // arrange
             var input = new int[] { 50, 51, 52, 53, 54, 55, 56, 25, 18 };
@@ -609,7 +609,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod19()
+        public void Q161FSTest19()
         {
             // arrange
             var input = new int[] { 56, 90, 10, 25, 32, 64, 58, 52 };

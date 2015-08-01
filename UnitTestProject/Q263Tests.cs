@@ -57,7 +57,7 @@ namespace UnitTestProject
         #region CSharp
 
         [TestMethod]
-        public void CSTestMethod1()
+        public void Q263CSTest()
         {
             // arrange
             int input = 123456789;
@@ -81,7 +81,7 @@ Chain length 2
         }
 
         [TestMethod]
-        public void CSTestMethod2()
+        public void Q263CSTest2()
         {
             // arrange
             int input = 1234;
@@ -108,7 +108,7 @@ Chain length 4
         }
 
         [TestMethod]
-        public void CSTestMethod3()
+        public void Q263CSTest3()
         {
             // arrange
             int input = 444;
@@ -133,7 +133,7 @@ Chain length 2
         }
 
         [TestMethod]
-        public void CSTestMethod4()
+        public void Q263CSTest4()
         {
             // arrange
             int input = 92482438;
@@ -160,7 +160,7 @@ Chain length 4
         }
 
         [TestMethod]
-        public void CSTestMethod5()
+        public void Q263CSTest5()
         {
             // arrange
             int input = 57878377;
@@ -203,7 +203,7 @@ Chain length 20
         }
 
         [TestMethod]
-        public void CSTestMethod6()
+        public void Q263CSTest6()
         {
             // arrange
             int input = 34131232;
@@ -239,7 +239,7 @@ Chain length 13
         }
 
         [TestMethod]
-        public void CSTestMethod7()
+        public void Q263CSTest7()
         {
             // arrange
             int input = 3434453;
@@ -278,7 +278,7 @@ Chain length 16
         }
 
         [TestMethod]
-        public void CSTestMethod8()
+        public void Q263CSTest8()
         {
             // arrange
             int input = 9833;
@@ -307,7 +307,7 @@ Chain length 6
         }
 
         [TestMethod]
-        public void CSTestMethod9()
+        public void Q263CSTest9()
         {
             // arrange
             int input = 1;
@@ -332,7 +332,7 @@ Chain length 2
         }
 
         [TestMethod]
-        public void CSTestMethod10()
+        public void Q263CSTest0()
         {
             // arrange
             int input = 3589458;
@@ -371,7 +371,7 @@ Chain length 12
         #region FSharp
 
         [TestMethod]
-        public void FSTestMethod1()
+        public void Q263FSTest1()
         {
             // arrange
             int input = 123456789;
@@ -396,7 +396,7 @@ Chain length 2
         }
 
         [TestMethod]
-        public void FSTestMethod2()
+        public void Q263FSTest2()
         {
             // arrange
             int input = 1234;
@@ -423,7 +423,7 @@ Chain length 4
         }
 
         [TestMethod]
-        public void FSTestMethod3()
+        public void Q263FSTest3()
         {
             // arrange
             int input = 444;
@@ -448,7 +448,7 @@ Chain length 2
         }
 
         [TestMethod]
-        public void FSTestMethod4()
+        public void Q263FSTest4()
         {
             // arrange
             int input = 92482438;
@@ -475,7 +475,7 @@ Chain length 4
         }
 
         [TestMethod]
-        public void FSTestMethod5()
+        public void Q263FSTest5()
         {
             // arrange
             int input = 57878377;
@@ -518,7 +518,7 @@ Chain length 20
         }
 
         [TestMethod]
-        public void FSTestMethod6()
+        public void Q263FSTest6()
         {
             // arrange
             int input = 34131232;
@@ -554,7 +554,7 @@ Chain length 13
         }
 
         [TestMethod]
-        public void FSTestMethod7()
+        public void Q263FSTest7()
         {
             // arrange
             int input = 3434453;
@@ -593,7 +593,7 @@ Chain length 16
         }
 
         [TestMethod]
-        public void FSTestMethod8()
+        public void Q263FSTest8()
         {
             // arrange
             int input = 9833;
@@ -622,7 +622,7 @@ Chain length 6
         }
 
         [TestMethod]
-        public void FSTestMethod9()
+        public void Q263FSTest9()
         {
             // arrange
             int input = 1;
@@ -647,7 +647,7 @@ Chain length 2
         }
 
         [TestMethod]
-        public void FSTestMethod10()
+        public void Q263FSTest10()
         {
             // arrange
             int input = 3589458;

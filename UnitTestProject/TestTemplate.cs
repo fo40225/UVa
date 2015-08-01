@@ -15,11 +15,11 @@ namespace UnitTestProject
     public class $$Tests
     {
         [TestMethod]
-        public void CSTestMethod1()
+        public void $$CSTest1()
         {
             // arrange
-            var input ;
-            var expected ;
+            var input = ;
+            var expected = ;
 
             // act
             var actual = $$CS.GetAnswer(input);

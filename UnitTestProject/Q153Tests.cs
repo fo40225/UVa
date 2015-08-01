@@ -47,7 +47,7 @@ namespace UnitTestProject
     public class Q153Tests
     {
         [TestMethod]
-        public void CSTestMethod1()
+        public void Q153CSTest1()
         {
             // arrange
             var input = "bacaa";
@@ -61,7 +61,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod2()
+        public void Q153CSTest2()
         {
             // arrange
             var input = "abc";
@@ -75,7 +75,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod3()
+        public void Q153CSTest3()
         {
             // arrange
             var input = "cba";

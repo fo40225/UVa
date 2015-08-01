@@ -44,7 +44,7 @@ namespace UnitTestProject
         #region CSharp
 
         [TestMethod]
-        public void CSTestMethod1()
+        public void Q143CSTest1()
         {
             // arrange
             var input = new double[] { 1.5, 1.5, 1.5, 6.8, 6.8, 1.5 };
@@ -58,7 +58,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod2()
+        public void Q143CSTest2()
         {
             // arrange
             var input = new double[] { 10.7, 6.9, 8.5, 1.5, 14.5, 1.5 };
@@ -72,7 +72,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod3()
+        public void Q143CSTest3()
         {
             // arrange
             var input = new double[] { 0, 100, 100, 0, 0, 0 };
@@ -86,7 +86,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod4()
+        public void Q143CSTest4()
         {
             // arrange
             var input = new double[] { 73.00, 98.22, 8.50, 95.66, 66.27, 13.55 };
@@ -100,7 +100,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod5()
+        public void Q143CSTest5()
         {
             // arrange
             var input = new double[] { 64.27, 41.32, 80.08, 78.29, 22.12, 28.56 };
@@ -114,7 +114,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod6()
+        public void Q143CSTest6()
         {
             // arrange
             var input = new double[] { 28.63, 91.29, 99.35, 12.04, 48.30, 74.61 };
@@ -128,7 +128,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod7()
+        public void Q143CSTest7()
         {
             // arrange
             var input = new double[] { 19.23, 91.24, 60.25, 46.96, 77.53, 12.41 };
@@ -145,7 +145,7 @@ namespace UnitTestProject
         #region FSharp
 
         [TestMethod]
-        public void FSTestMethod1()
+        public void Q143FSTest1()
         {
             // arrange
             var input = new double[] { 1.5, 1.5, 1.5, 6.8, 6.8, 1.5 };
@@ -159,7 +159,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod2()
+        public void Q143FSTest2()
         {
             // arrange
             var input = new double[] { 10.7, 6.9, 8.5, 1.5, 14.5, 1.5 };
@@ -173,7 +173,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod3()
+        public void Q143FSTest3()
         {
             // arrange
             var input = new double[] { 0, 100, 100, 0, 0, 0 };
@@ -187,7 +187,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod4()
+        public void Q143FSTest4()
         {
             // arrange
             var input = new double[] { 73.00, 98.22, 8.50, 95.66, 66.27, 13.55 };
@@ -201,7 +201,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod5()
+        public void Q143FSTest5()
         {
             // arrange
             var input = new double[] { 64.27, 41.32, 80.08, 78.29, 22.12, 28.56 };
@@ -215,7 +215,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod6()
+        public void Q143FSTest6()
         {
             // arrange
             var input = new double[] { 28.63, 91.29, 99.35, 12.04, 48.30, 74.61 };
@@ -229,7 +229,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void FSTestMethod7()
+        public void Q143FSTest7()
         {
             // arrange
             var input = new double[] { 19.23, 91.24, 60.25, 46.96, 77.53, 12.41 };

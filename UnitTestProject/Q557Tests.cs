@@ -51,7 +51,7 @@ namespace UnitTestProject
     public class Q557Tests
     {
         [TestMethod]
-        public void CSTestMethod1()
+        public void Q557CSTest1()
         {
             // arrange
             var input = 6;
@@ -66,7 +66,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod2()
+        public void Q557CSTest2()
         {
             // arrange
             var input = 10;
@@ -81,7 +81,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod3()
+        public void Q557CSTest3()
         {
             // arrange
             var input = 256;
@@ -96,7 +96,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod4()
+        public void Q557CSTest4()
         {
             // arrange
             var input = 50000;
@@ -111,7 +111,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod5()
+        public void Q557CSTest5()
         {
             // arrange
             var input = 100000;
@@ -126,7 +126,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod6()
+        public void Q557CSTest6()
         {
             // arrange
             var input = 2;
@@ -141,7 +141,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod7()
+        public void Q557CSTest7()
         {
             // arrange
             var input = 4;
@@ -156,7 +156,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod8()
+        public void Q557CSTest8()
         {
             // arrange
             var input = 8;
@@ -171,7 +171,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod9()
+        public void Q557CSTest9()
         {
             // arrange
             var input = 20;
@@ -186,7 +186,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod10()
+        public void Q557CSTest10()
         {
             // arrange
             var input = 50;
@@ -201,7 +201,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod11()
+        public void Q557CSTest11()
         {
             // arrange
             var input = 100;
@@ -216,7 +216,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod12()
+        public void Q557CSTest12()
         {
             // arrange
             var input = 200;
@@ -231,7 +231,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod13()
+        public void Q557CSTest13()
         {
             // arrange
             var input = 500;
@@ -246,7 +246,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod14()
+        public void Q557CSTest14()
         {
             // arrange
             var input = 1000;
@@ -261,7 +261,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod15()
+        public void Q557CSTest15()
         {
             // arrange
             var input = 2000;
@@ -276,7 +276,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod16()
+        public void Q557CSTest16()
         {
             // arrange
             var input = 3000;
@@ -291,7 +291,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod17()
+        public void Q557CSTest17()
         {
             // arrange
             var input = 4000;
@@ -306,7 +306,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod18()
+        public void Q557CSTest18()
         {
             // arrange
             var input = 5000;
@@ -321,7 +321,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod19()
+        public void Q557CSTest19()
         {
             // arrange
             var input = 6000;
@@ -336,7 +336,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod20()
+        public void Q557CSTest20()
         {
             // arrange
             var input = 7000;
@@ -351,7 +351,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod21()
+        public void Q557CSTest21()
         {
             // arrange
             var input = 8000;
@@ -366,7 +366,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod22()
+        public void Q557CSTest22()
         {
             // arrange
             var input = 9000;
@@ -381,7 +381,7 @@ namespace UnitTestProject
         }
 
         [TestMethod]
-        public void CSTestMethod23()
+        public void Q557CSTest23()
         {
             // arrange
             var input = 10000;
