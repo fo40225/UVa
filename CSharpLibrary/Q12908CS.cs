@@ -19,7 +19,35 @@ namespace CSharpLibrary
     {
         public static string GetAnswer(string input)
         {
-            throw new NotImplementedException();
+            if (input == null)
+            {
+                throw new ArgumentNullException("input", "input is null");
+            }
+
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                throw new ArgumentException("input is empty or all whitespace", "input");
+            }
+
+            var books = input.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
+                                 .Select(y => int.Parse(y));
+
+            StringBuilder sb = new StringBuilder();
+            foreach (var book in books)
+            {
+                int page = 0;
+                int sum = 0;
+
+                while (!(sum > book))
+                {
+                    page++;
+                    sum += page;
+                }
+
+                int lostPage = sum - book;
+                sb.AppendLine(lostPage.ToString() + " " + page.ToString());
+            }
+            return sb.ToString();
         }
     }
 }
