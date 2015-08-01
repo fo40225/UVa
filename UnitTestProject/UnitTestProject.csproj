@@ -60,6 +60,7 @@
     <Compile Include="Q10023Tests.cs" />
     <Compile Include="Q12844Tests.cs" />
     <Compile Include="Q12854Tests.cs" />
+    <Compile Include="Q12908Tests.cs" />
     <Compile Include="Q143Tests.cs" />
     <Compile Include="Q161Tests.cs">
       <SubType>Code</SubType>
